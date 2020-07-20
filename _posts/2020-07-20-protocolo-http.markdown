@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Protocolo HTTP"
-description: Protocolo HTTP.
 date: 2020-07-20 18:03:36 +0530
 categories: Web
 ---
