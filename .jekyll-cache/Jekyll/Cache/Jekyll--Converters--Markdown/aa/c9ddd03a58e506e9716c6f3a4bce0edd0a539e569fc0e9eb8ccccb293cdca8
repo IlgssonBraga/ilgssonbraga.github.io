@@ -1,0 +1,36 @@
+I"�<p>Saiba mais o que é e como funciona o Protocolo HTTP</p>
+
+<h1 id="o-que-é-o-protocolo-http">O que é o protocolo HTTP?</h1>
+
+<p>HTTP (HyperText Transfer Protocol) é um protocolo da camada de aplicação do modelo OSI que permite buscar recursos de um servidor na internet (client-server protocol). Isso significa que uma busca que começa pelo client, geralmente usando um browser, retorna um documento criado a partir de diferentes documentos buscados em servidores na internet.</p>
+
+<p>Quando um cliente busca alguma informação de uma página web dizemos que ele está fazendo uma requisição, e tudo que é retornado a partir disso chamamos simplesmente de resposta.</p>
+
+<p>O protocolo HTTP foi criado no início dos anos 90 e sofreu diversas mudanças ao longo dos anos. É um protocolo da camada de aplicação que é enviado por TCP ou por uma conexão TCP criptografada por TLS.</p>
+
+<h1 id="componentes-dos-sitemas-baseados-no-protocolo-http">Componentes dos sitemas baseados no protocolo HTTP</h1>
+
+<p>Como já citamos, o protocolo HTTP é um client-server protocol, o que significa que as requisições são enviadas por um usuário, na maior parte do tempo por meio de um browser. Mas as requisições também podem ser feitas por sistemas programados. Cada requisição é enviada para um servidor que faz o tratamento adequado e devolve uma resposta. Mas entre o cliente fazendo a requisição e o servidor devolvendo uma resposta existe uma série de entidades chamadas de proxies que atuam de diferentes formas para armazenar informações em cache ou fazer redirecionamentos para manter em tempo ágil o fluxo da requisição.</p>
+
+<h1 id="cliente">Cliente</h1>
+
+<p>O cliente, ou user-agent, é qualquer entidade que seja capaz de realizar requisições para um servidor.
+Para apresentar uma página da web, o navegador envia uma solicitação original para buscar o documento HTML que representa a página. Em seguida, analisa esse arquivo, fazendo solicitações adicionais correspondentes a scripts de execução, informações de layout (CSS) a serem exibidas e sub-recursos contidos na página (geralmente imagens e vídeos). O navegador da web combina esses recursos para apresentar ao usuário um documento completo, a página da Web.</p>
+
+<h1 id="servidor">Servidor</h1>
+
+<p>No lado oposto ao cliente está o servidor, que devolve como resposta o documento HTML com o que foi solicitado pelo cliente.
+Um servidor não é necessariamente uma única máquina, mas várias instâncias de software para servidor podem ser hospedadas na mesma máquina.</p>
+
+<h1 id="proxies">Proxies</h1>
+
+<p>Os proxies fazem parte da camada intermediária de um fluxo de requisição-respota. Os proxies tratam as requisições e devolvem as respostas da melhor maneira para manter um bom desempenho. Algumas funções dos proxies:</p>
+
+<ul>
+  <li>cache (armazena informações públicas ou privadas)</li>
+  <li>filtragem (verificações de segurança)</li>
+  <li>balanceamento de carga (permite que vários servidores atendam a diferentes solicitações)</li>
+  <li>autenticação (controla o acesso a diferentes recursos)</li>
+  <li>registro (permite o armazenamento de informações)</li>
+</ul>
+:ET
