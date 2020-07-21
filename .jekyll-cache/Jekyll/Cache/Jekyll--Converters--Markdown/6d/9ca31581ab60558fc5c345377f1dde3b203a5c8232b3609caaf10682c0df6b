@@ -1,0 +1,84 @@
+I"�<p>Nesse artigo vamos ver o passo a passo para instalar o Node.js no
+Fedora 32 usando o NVM</p>
+
+<h1 id="o-que-é-o-nvm">O que é o NVM?</h1>
+
+<p>NVM é um gerenciador de versões do Node.js. Ele foi criado para ser
+instalado pelo usuário e invocado a partir da linha de comando do
+terminal. É compatível com qualquer POSIX-compliant shell, ou seja,
+qualquer terminal que respeite os padrões do POSIX. Pode ser instalado
+em sistemas Unix, macOS e Windows. Aqui vamos fazer a instalação baseado no Fedora 32 Workstation.</p>
+
+<h1 id="instalando-o-nvm">Instalando o NVM</h1>
+
+<p>Para instalar o NVM você pode rodar o <a href="https://github.com/nvm-sh/nvm/blob/v0.35.3/install.sh">script de instalação</a>, ou apenas rodar manualmente um dos comandos abaixo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+curl <span class="nt">-o-</span> https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+wget <span class="nt">-qO-</span> https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
+</code></pre></div></div>
+
+<p>Logo após precisamos linkar o conteúdo salvo em ~/.nvm ao perfil do usuário (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nb">export </span><span class="nv">NVM_DIR</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span><span class="o">[</span> <span class="nt">-z</span> <span class="s2">"</span><span class="k">${</span><span class="nv">XDG_CONFIG_HOME</span><span class="p">-</span><span class="k">}</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">printf</span> %s <span class="s2">"</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span><span class="s2">/.nvm"</span> <span class="o">||</span> <span class="nb">printf</span> %s <span class="s2">"</span><span class="k">${</span><span class="nv">XDG_CONFIG_HOME</span><span class="k">}</span><span class="s2">/nvm"</span><span class="si">)</span><span class="s2">"</span>
+<span class="o">[</span> <span class="nt">-s</span> <span class="s2">"</span><span class="nv">$NVM_DIR</span><span class="s2">/nvm.sh"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="se">\.</span> <span class="s2">"</span><span class="nv">$NVM_DIR</span><span class="s2">/nvm.sh"</span> <span class="c"># This loads nvm</span>
+
+</code></pre></div></div>
+
+<p>Para verificar se tudo ocorreu da forma correta, podemos rodar:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+nvm <span class="nt">--version</span>
+
+</code></pre></div></div>
+
+<h1 id="nodejs">Node.js</h1>
+
+<p>Instalado o NVM, podemos agora gerenciar qual versão do Node.js nós queremos. O Node.js é um runtime Javascript orientado a eventos assícronos. Ele foi construído aplicações escaláveis.</p>
+
+<p>Para instalar o Node.js, precisamos apenas escolher a versão que queremos e rodar o comando abaixo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+nvm <span class="nb">install </span>12.18.2
+
+</code></pre></div></div>
+
+<p>Nesse caso eu escolhi a versão 12.18.2 porque no momento desse post é a versão LTS (long-term support).</p>
+
+<p>Para usar a versão instalada fazemos:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+nvm use 12.18.2
+
+</code></pre></div></div>
+
+<p>E para mostrar qual versão está ativa no momento rodamos:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+nvm <span class="nb">exec </span>node <span class="nt">--version</span>
+
+</code></pre></div></div>
+
+<p>Também podemos ver a versão do Node.js com o commando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+node <span class="nt">--version</span>
+
+</code></pre></div></div>
+
+<p>Com cada versão do Node.js também vem instalado o NPM (Node Package Manager) ou gerenciador de pacotes do Node.js, podemos utilizar o NPM para instalar bibliotecas nos nossos projetos. Também podemos ver qual versão do NPM está instalada rodando:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+npm <span class="nt">--version</span>
+
+</code></pre></div></div>
+
+<p>Agora com tudo configurado podemos dar início os nossos projetos usando
+Node.js.</p>
+:ET
