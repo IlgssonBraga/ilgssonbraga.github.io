@@ -1,4 +1,4 @@
-I"�<p>Nesse artigo vamos ver o passo a passo para instalar o Node.js no
+I"�<p>Nesse artigo vamos ver o passo a passo para instalar o Node.js no
 Fedora 32 usando o NVM</p>
 
 <h1 id="o-que-é-o-nvm">O que é o NVM?</h1>
@@ -40,7 +40,7 @@ nvm <span class="nt">--version</span>
 
 <h1 id="nodejs">Node.js</h1>
 
-<p>Instalado o NVM, podemos agora gerenciar qual versão do Node.js nós queremos. O Node.js é um runtime Javascript orientado a eventos assícronos. Ele foi construído aplicações escaláveis.</p>
+<p>Instalado o NVM, podemos agora gerenciar qual versão do Node.js nós queremos. O Node.js é um runtime Javascript orientado a eventos assíncronos. Ele foi construído para fazer aplicações escaláveis.</p>
 
 <p>Para instalar o Node.js, precisamos apenas escolher a versão que queremos e rodar o comando abaixo:</p>
 
@@ -65,20 +65,20 @@ nvm <span class="nb">exec </span>node <span class="nt">--version</span>
 
 </code></pre></div></div>
 
-<p>Também podemos ver a versão do Node.js com o commando:</p>
+<p>Também podemos ver a versão do Node.js com o comando:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 node <span class="nt">--version</span>
 
 </code></pre></div></div>
 
-<p>Com cada versão do Node.js também vem instalado o NPM (Node Package Manager) ou gerenciador de pacotes do Node.js, podemos utilizar o NPM para instalar bibliotecas nos nossos projetos. Também podemos ver qual versão do NPM está instalada rodando:</p>
+<p>Com cada versão do Node.js também vem instalado o NPM (Node Package Manager) ou gerenciador de pacotes do Node.js. Podemos utilizar o NPM para instalar bibliotecas nos nossos projetos. Também podemos ver qual versão do NPM está instalada rodando:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 npm <span class="nt">--version</span>
 
 </code></pre></div></div>
 
-<p>Agora com tudo configurado podemos dar início os nossos projetos usando
+<p>Agora com tudo configurado podemos dar início aos nossos projetos usando
 Node.js.</p>
 :ET

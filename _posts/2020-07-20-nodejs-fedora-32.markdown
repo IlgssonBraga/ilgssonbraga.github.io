@@ -51,7 +51,7 @@ nvm --version
 
 # Node.js
 
-Instalado o NVM, podemos agora gerenciar qual versão do Node.js nós queremos. O Node.js é um runtime Javascript orientado a eventos assícronos. Ele foi construído aplicações escaláveis.
+Instalado o NVM, podemos agora gerenciar qual versão do Node.js nós queremos. O Node.js é um runtime Javascript orientado a eventos assíncronos. Ele foi construído para fazer aplicações escaláveis.
 
 Para instalar o Node.js, precisamos apenas escolher a versão que queremos e rodar o comando abaixo:
 
@@ -79,7 +79,7 @@ nvm exec node --version
 
 ```
 
-Também podemos ver a versão do Node.js com o commando:
+Também podemos ver a versão do Node.js com o comando:
 
 ```bash
 
@@ -87,7 +87,7 @@ node --version
 
 ```
 
-Com cada versão do Node.js também vem instalado o NPM (Node Package Manager) ou gerenciador de pacotes do Node.js, podemos utilizar o NPM para instalar bibliotecas nos nossos projetos. Também podemos ver qual versão do NPM está instalada rodando:
+Com cada versão do Node.js também vem instalado o NPM (Node Package Manager) ou gerenciador de pacotes do Node.js. Podemos utilizar o NPM para instalar bibliotecas nos nossos projetos. Também podemos ver qual versão do NPM está instalada rodando:
 
 ```bash
 
@@ -95,5 +95,5 @@ npm --version
 
 ```
 
-Agora com tudo configurado podemos dar início os nossos projetos usando
+Agora com tudo configurado podemos dar início aos nossos projetos usando
 Node.js.
